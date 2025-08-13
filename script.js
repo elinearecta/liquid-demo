@@ -2,7 +2,7 @@
   const engine = new liquidjs.Liquid();
 
   // API ophalen
-  const res = await fetch('https://catfact.ninja/facts?limit=5');
+  const res = await fetch('https://catfact.ninja/facts?limit=2');
   const posts = await res.json();
 
   const tpl = await fetch('template.liquid').then(r => r.text());
