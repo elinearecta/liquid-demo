@@ -1,6 +1,6 @@
 <h1>Hallo {{ user.name | capitalize }}</h1>
 <ul>
   {% for post in posts %}
-    <li>{{ post.title | escape }}</li>
+    <li>{{ post.text | escape }}</li>
   {% endfor %}
 </ul>
