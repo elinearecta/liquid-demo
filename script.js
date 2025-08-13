@@ -2,7 +2,7 @@
   const engine = new liquidjs.Liquid();
 
   // API ophalen
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=5');
+  const res = await fetch('https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=5');
   const posts = await res.json();
 
   const tpl = await fetch('template.liquid').then(r => r.text());
